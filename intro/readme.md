@@ -16,7 +16,7 @@ npm install -g yarn
 ```
 
 To install the latest version of Node.js, run `nvm install latest`. 
-To install the latest stable version, run `nvm install lts`.
+To install the latest stable version, run  ```nvm install lts```
 
 # JavaScript Crash Course
 [Youtube - 100+ JavaScript Concepts you Need to Know](https://youtu.be/lkIFF4maKMU)
@@ -131,11 +131,12 @@ The complete list of topics covered in this video:
 </ol>
 
 <!-- 
+git remote remove origin
+
 git remote add origin https://github.com/ankitT20/JS_Vanilla_Fireship.git
 git branch -M main
 git push -u origin main 
 -->
-
 <!-- 
 git init
 git add .
@@ -143,4 +144,11 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/ankitT20/JS_Vanilla_Fireship.git
 git push -u origin main
+ -->
+
+
+
+
+<!-- 
+c:; cd 'c:\Users\ANKIT\Documents\VScode\javascript-course'; git add .; git commit -a -m "additional commit Feb 2025"; git push -u origin main;
  -->
