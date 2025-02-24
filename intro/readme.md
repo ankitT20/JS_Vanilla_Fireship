@@ -15,10 +15,11 @@ nvm use 12.0.1
 npm install -g yarn
 ```
 
-To install the latest version of Node.js, run 
-`nvm install latest`. 
+To install the latest version of Node.js, run `nvm install latest`. 
 To install the latest stable version, run  
-```nvm install lts```
+```
+nvm install lts
+```
 
 # JavaScript Crash Course
 [Youtube - 100+ JavaScript Concepts you Need to Know](https://youtu.be/lkIFF4maKMU)
