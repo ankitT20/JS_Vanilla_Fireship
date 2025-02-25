@@ -186,7 +186,7 @@ function outer() {
 
     function inner() {
         count++;
-        return '${count} ${fish}'
+        return `${count} ${fish}`
     }
 
     return inner;
@@ -196,13 +196,103 @@ const fun = outer();
 console.log(fun());
 console.log(fun());
 console.log(fun());
-console.log(fun());
 
-// 10:53
+// 6. OBJECTS
+// key: value pairs
+const obj = {
+    name: 'Clown',
+    face: '🤡',
+    age: 99,
+    hello: function() {
+        console.log(`hello ${this.name}`);  
+        // this is the current object that the code is operating in
+        // this refers to the object that is calling the function
+        console.log(this);
+    },
+    hello2: () => {
+        console.log(this);
+        // it dosent have its own binding to this, bypasses our custom function, this becomes the global object
+    }
+}
+
+obj.hello();
+obj.hello2();
+
+// other methods
+const clown = { 
+    face: '🤡', 
+}
+
+const ghost = { 
+    face: '👻'
+}
+
+function hello() { 
+    return this.face; 
+}
+
+const result = hello.call(ghost); 
+console.log(result)
+
+
+
+/* 
+typeof  23; // number
+typeof "foo" // string
+typeof null // null
+
+typeof {} // object
+typeof [] // object
+typeof function() {} // function (which inherits from object)
 
 
 
 
 
+true; // true
+!! "hello"; // true
+!! -1; // true
+!! []; // true
+!! {}; // true
 
+false; // false
+!! null; // false
+!! undefined; // false
+!! 0; // false
+!! ""; // false
+
+
+
+
+// hoisting is as if your `function fun() {}` was located here. 
+
+fun(); // works. 
+
+function fun() {}
+
+
+
+// closure.js
+
+function outer() {
+
+    let count = 0; // persists in memory after outer is popped off the call stack
+
+    function inner() {
+        count++;
+        return count;
+    }
+
+    return inner;
+}
+
+// Creates the Closure
+const addOne = outer();
+
+// Operates within its context or lexical environment
+addOne(); // 1
+addOne(); // 2
+addOne(); // 3
+
+*/
 
