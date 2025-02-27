@@ -20,7 +20,7 @@ const dog = { }
 const cat = new Object();
 
 // static method
-const horse = Object.create({ })
+const horse = Object.create({ })  // to inherit properties from another object, prototype chain
 
 
 // Get and Set Properties
