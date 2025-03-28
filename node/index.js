@@ -55,7 +55,7 @@ app.get('/', async (request, response) => {
 
 });
 
-app.listen(process.env.PORT || 3000, () => console.log(`App available on http://localhost:3000`))
+app.listen(process.env.PORT || 3000, () => console.log(`App available on https://api.openai.com`))
 
 
 /* 
@@ -169,7 +169,7 @@ app.get('/', async (request, response) => {
 
 });
 
-app.listen(process.env.PORT || 3000, () => console.log(`App available on http://localhost:3000`))
+app.listen(process.env.PORT || 3000, () => console.log(`App available on https://api.openai.com`))
 Deploy the app to Google App Engine
 Create a Google Cloud account and install the gcloud SDK.
 

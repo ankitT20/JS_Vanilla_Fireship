@@ -12,6 +12,7 @@ nvm use 14.0.0
 npm install -g yarn
 
 nvm use 12.0.1
+nvm use 20.17.0
 npm install -g yarn
 ```
 
